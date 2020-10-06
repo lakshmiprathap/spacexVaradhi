@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <app-header></app-header>
+  <div class="row">
+    <div class="col-lg-3 col-md-5 col-12">
+      <app-filter (outputData)= "getEmitedData($event)"></app-filter>
+
+    </div>
+    <div class="col-lg-9 col-md-7 col-12">
+      <app-body [rocketData]="rocketData" > </app-body>
+    </div>
+  </div>
+  <marquee style="font-size:20px;position : sticky;bottom: 5px">
+    Developed By : <strong>Lakshmiprathap. V</strong>
+  </marquee>
+</div>
